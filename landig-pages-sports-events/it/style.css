@@ -307,30 +307,42 @@ a:hover{
 --------------------------------*/
 .hbspt-form{
   max-width:650px;
-  margin:50px auto;
-  padding:50px;
-  background:rgba(27,29,44,0.6);
+  margin:0px auto;
+  background:none;
 }
 .hs-form-field{
   margin:15px 0;
 }
 .hs-input{
   width:100%;
+  background: rgba(0,0,0,.5);
 }
 
-.hs-button{
-  background:#FEA900;
-  border-radius: 5px;
-  color:#fff;
-  font-size:1.4em;
-  border: none;
-  padding: 8px 40px;
+.hs-form .hs-button {
+    color: #fff!important;
+    text-shadow: 0 -1px 0 #FEA900!important;
+    background-color: #FEA900!important;
+    background-image: none!important;
+    box-shadow: none!important;
+    border-radius: 4px!important;
+    transition: opacity 0.15s linear;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-top: none!important;
+    border-bottom: none!important;
+    border-right:none!important;
+    border-left: none!important;
+    font-size:1.4em!important;
+    padding:3% 10%!important;
+}
+.hs-form .hs-button:hover{
+  background:#FFC145!important;
+  color:#fff!important;
+  font-size:1.4em!important;
+  padding:3% 10%!important;
 }
 
-.hs-button:hover{
-  background:#FFC145;
-  color:#fff;
-}
 
 
 /*-------------------------------
