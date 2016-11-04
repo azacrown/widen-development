@@ -1,0 +1,101 @@
+/*-----------------------------------------------
+	#Payment Methods
+-----------------------------------------------*/
+/* Main Tab Styles */
+body{background:#272944}
+.paymentContainer {
+  padding:2%;
+  max-width:1200px;
+  margin: 0 auto;
+}
+.intro{
+  padding:1% 3%;
+  color:#fff;
+}
+
+.of_scroll{
+  overflow-y: scroll;
+}
+.hRight{
+  color:#fff;
+  background:#c81f27;
+  padding:5px;
+}
+
+.blenderTabs ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.blenderTabs ul li {
+	height: 60px;
+	margin: 0;
+	padding: 26px 0 0 10px;
+	border-bottom: 1px solid #fff;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+.blenderTabs li:after {
+    content:"+";
+    color:#c81f27;
+    font-size: 40px;
+    line-height: 0;
+    float: right;
+    padding-right: 10px;
+}
+.blenderTabs li.active:after {
+padding-right: 16px;
+line-height: 52px;
+		-webkit-transform: rotate(-45deg);
+		/* Firefox */
+		-moz-transform: rotate(-45deg);
+		/* IE */
+		-ms-transform: rotate(-45deg);
+		/* Opera */
+		-o-transform: rotate(-45deg);
+}
+
+.tabContent{
+}
+.boxCard{
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: #fff;
+  margin: 10px;
+}
+.paymentContainer .blenderTabs .boxCard h4{padding-left:5px!important;color:#212121!important;}
+.paymentContainer .blenderTabs .boxCard p{padding:10px!important; color:#212121!important;}
+.active.tabContent {display: block !important;}
+.leading--zero {list-style-type: decimal-leading-zero;}
+ol.leading--zero {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+ol.leading--zero li { display: block; height: 67px;line-height: 67px; width: 100%; cursor: pointer;overflow: hidden; border-bottom: 1px solid #e7e7e7;}
+ol.leading--zero li.active {
+  background: #5b5d7d;
+  color: #fff;
+ }
+ol.leading--zero li:before {
+    content:"0" counter(item) "  ";
+    counter-increment: item;
+    font-size: 22px;
+    padding: 0 20px 0 10px;
+}
+ol.leading--zero li:after {
+    line-height: 67px;
+}
+
+.content--inline {display: inline;color:#212121!important;}
+ol.leading--zero li.active .content--inline {display: inline;color:#fff!important;}
+.span_6 { /*width: 50%; float:left;*/ }
+.span_5 { /*width: 47.666%;float:left;*/padding-left: 10px;
+    padding-right: 10px;max-height:600px;  }
+
+    .outro{
+      padding:5%;
+      color:#fff;
+    }

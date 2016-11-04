@@ -94,3 +94,8 @@ ol.leading--zero li.active .content--inline {display: inline;color:#fff!importan
 .span_6 { /*width: 50%; float:left;*/ }
 .span_5 { /*width: 47.666%;float:left;*/padding-left: 10px;
     padding-right: 10px;max-height:600px;  }
+
+    .outro{
+      padding:5%;
+      color:#fff;
+    }
