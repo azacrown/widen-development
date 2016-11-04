@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+sitemap: https://www.betlive5000.com/sitemap.xml
