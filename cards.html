@@ -1,0 +1,518 @@
+<style type="text/css">a {
+        text-decoration: none;
+    }
+
+    .transition {
+        transition: .3s ease-in-out;
+    }
+
+    .card {
+        background-color: #e2e2e2;
+        bottom: 0;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        height: 300px;
+        margin: 10px auto;
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+    }
+
+    .card:hover {
+        height: 450px;
+        width: 300px;
+    }
+
+    .card:hover .cta-container {
+        display: inline;
+        margin-top: 380px;
+        margin-left: 37%;
+        width: 60%;
+    }
+
+    .card:hover .info-promo-container {
+        display: inline;
+        margin-top: 385px;
+        margin-left: 15px;
+        width: 20%;
+    }
+
+    .card:hover .card_circle {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover .card_circle1 {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover .card_circle2 {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover .card_circle3 {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover .card_circle4 {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover .card_circle5 {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover h2 {
+        background: #272944;
+        color: #fff!important;
+        margin-top: 100px;
+        padding: 5px;
+    }
+
+    .card:hover h2 small {
+        color: #fff
+    }
+
+    .card:hover p {
+        margin-top: 300px
+    }
+
+    .card_circle {
+        background: url('http://i.imgur.com/rjO0pRg.jpg') no-repeat bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .card_circle1 {
+        background: url('http://i.imgur.com/16UFga0.jpg') no-repeat center bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .card_circle2 {
+        background: url('http://i.imgur.com/aUQvNfs.jpg') no-repeat center bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .card_circle3 {
+        background: url('http://i.imgur.com/BVLSBPb.jpg') no-repeat center bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .card_circle4 {
+        background: url('http://i.imgur.com/60K9f12.jpg') no-repeat center bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .card_circle5 {
+        background: url('http://i.imgur.com/GeWoSV3.jpg') no-repeat center bottom;
+        background-color: #272944;
+        background-size: cover;
+        background-position: 0% -300%;
+        border-radius: 50%;
+        height: 400px;
+        margin-left: -75px;
+        margin-top: -205px;
+        position: absolute;
+        width: 450px;
+    }
+
+    .h2-promo {
+        color: #272944!important;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 183px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .text-promo {
+        color: rgba(0, 0, 0, .8)!important;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        font-weight: normal;
+        margin-top: 240px;
+        padding: 4%;
+        position: absolute;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    .cta-container {
+        display: none;
+        margin-top: 320px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .info-promo-container {
+        display: none;
+        margin-top: 320px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .info-promo {
+        -moz-border-radius: 2px;
+        -moz-transition: 0.2s ease-out;
+        -ms-transition: 0.2s ease-out;
+        -o-transition: 0.2s ease-out;
+        -webkit-border-radius: 2px;
+        -webkit-transition: 0.2s ease-out;
+        background-clip: padding-box;
+        border: 2px solid orange;
+        border-radius: 2px;
+        color: darkorange;
+        display: inline-block;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        height: 24px;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        margin-bottom: 23px;
+        padding: 0 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.2s ease-out;
+    }
+
+    .cta {
+        -moz-border-radius: 2px;
+        -moz-transition: 0.2s ease-out;
+        -ms-transition: 0.2s ease-out;
+        -o-transition: 0.2s ease-out;
+        -webkit-border-radius: 2px;
+        -webkit-transition: 0.2s ease-out;
+        background-clip: padding-box;
+        border: 2px solid #272944;
+        border-radius: 2px;
+        color: #272944;
+        display: inline-block;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        height: 36px;
+        letter-spacing: 0.5px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        padding: 0 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.2s ease-out;
+    }
+
+    .cta:hover {
+        background-color: #272944;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #fff;
+        -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .info-promo:hover {
+        background-color: orange;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #fff;
+        -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .card-container {
+        margin: 0 auto;
+        float: left;
+    }
+
+    .card-container-carousel {
+        margin: 0 auto;
+    }
+
+    .hide,
+    .ui-loader {
+        display: none;
+    }
+
+    .cont-card {
+        min-height: 470px;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        //add your other targets here
+        $("#myCarousel, #myOtherCarousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        //add your other targets here
+        $("#myCarousel, #myOtherCarousel").swipeleft(function() {
+            $(this).carousel('next');
+        });
+    });
+</script>
+<div class="cont-card">
+<div class="row hidden-xs">
+<div class="card-container col-lg-4 col-md-4 col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Bonus Registrazione su Sportsbook</h2>
+
+<p class="text-promo">Bonus del 100% sul primo deposito per i nuovi registrati!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="https://www.betlive5000.com/promozioni/bonus-di-registrazione-sportsbook" title="bonus di registrazione sportsbook">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Gioca Subito</a></div>
+
+<div class="card_circle transition">&nbsp;</div>
+</div>
+</div>
+
+<div class="card-container col-lg-4 col-md-4 col-sm-12">
+<div class="card transition">
+<h2 class="transition h2-promo">Bonus Registrazione su Live Betting</h2>
+
+<p class="text-promo">Bonus del 100% sul primo deposito per i nuovi registrati!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="https://www.betlive5000.com/promozioni/bonus-di-registrazione-sportsbook" title="bonus di registrazione sportsbook">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Registrati</a></div>
+
+<div class="card_circle1 transition">&nbsp;</div>
+</div>
+</div>
+
+<div class="card-container col-lg-4 col-md-4 col-sm-12">
+<div class="card transition">
+<h2 class="transition h2-promo">Bonus Registrazione su Casin&ograve;</h2>
+
+<p class="text-promo">Effettua il tuo primo deposito e guadagna un bonus del 200%!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="https://www.betlive5000.com/promozioni/bonus-di-registrazione-casino" title="bonus di registrazione casino">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Entra ora!</a></div>
+
+<div class="card_circle2 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="container visible-xs-block">
+<div class="carousel slide" data-ride="carousel" id="myCarousel"><!-- Indicators -->
+<ol class="carousel-indicators black">
+	<li class="active" data-slide-to="0" data-target="#myCarousel">&nbsp;</li>
+	<li data-slide-to="1" data-target="#myCarousel">&nbsp;</li>
+	<li data-slide-to="2" data-target="#myCarousel">&nbsp;</li>
+</ol>
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<div class="card-container col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Bonus Registrazione su Sportsbook</h2>
+
+<p class="text-promo">Bonus del 100% sul primo deposito per i nuovi registrati!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="/promozioni/bonus-di-registrazione-sportsbook" title="bonus di registrazione sportsbook">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Gioca Subito</a></div>
+
+<div class="card_circle transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="card-container-carousel col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Bonus Registrazione su Live Betting</h2>
+
+<p class="text-promo">Bonus del 100% sul primo deposito per i nuovi registrati!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="/promozioni/bonus-di-registrazione-sportsbook" title="bonus di registrazione sportsbook">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Registrati</a></div>
+
+<div class="card_circle1 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="card-container-carousel col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Bonus Registrazione su Casin&ograve;</h2>
+
+<p class="text-promo">Effettua il tuo primo deposito e guadagna un bonus del 200%!</p>
+
+<div class="info-promo-container transition"><a class="info-promo" href="/promozioni/bonus-di-registrazione-casino" title="bonus di registrazione casino">info</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Entra ora!</a></div>
+
+<div class="card_circle2 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Left and right controls --><a class="left hide carousel-control" data-slide="prev" href="#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right hide carousel-control" data-slide="next" href="#myCarousel" role="button"> <span class="sr-only">Next</span> </a></div>
+</div>
+</div>
+
+<div class="cont-card">
+<div class="row hidden-xs">
+<div class="card-container col-lg-4 col-md-4 col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Casin&ograve; Live</h2>
+
+<p class="text-promo">I migliori tavoli virtuali per un&#39;esperienza di gioco unica!</p>
+<!-- <div class="info-promo-container transition"><a class="info-promo" href="#">Info</a></div> -->
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Registrati!</a></div>
+
+<div class="card_circle3 transition">&nbsp;</div>
+</div>
+</div>
+
+<div class="card-container col-lg-4 col-md-4 col-sm-12">
+<div class="card transition">
+<h2 class="transition h2-promo">Super Welcome Bonus Live Betting</h2>
+
+<p class="text-promo">Coming Soon!</p>
+<!--
+<div class="info-promo-container transition"><a class="info-promo" href="#">Anmelden</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati">Jetz Wetten!</a></div> -->
+
+<div class="card_circle4 transition">&nbsp;</div>
+</div>
+</div>
+
+<div class="card-container col-lg-4 col-md-4 col-sm-12">
+<div class="card transition">
+<h2 class="transition h2-promo">Super Welcome Bonus Live Casino</h2>
+
+<p class="text-promo">Coming Soon!</p>
+<!--
+<div class="info-promo-container transition"><a class="info-promo" href="#">Anmelden</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati">Jetz Wetten!</a></div> -->
+
+<div class="card_circle5 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="container visible-xs-block">
+<div class="carousel slide" data-ride="carousel" id="myCarousel2"><!-- Indicators -->
+<ol class="carousel-indicators black">
+	<li class="active" data-slide-to="0" data-target="#myCarousel">&nbsp;</li>
+	<li data-slide-to="1" data-target="#myCarousel">&nbsp;</li>
+	<li data-slide-to="2" data-target="#myCarousel">&nbsp;</li>
+</ol>
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<div class="card-container col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Casin&ograve; Live</h2>
+
+<p class="text-promo">I migliori tavoli virtuali per un&#39;esperienza di gioco unica!</p>
+<!-- <div class="info-promo-container transition"><a class="info-promo" href="#">Info</a></div> -->
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati" title="registrati">Registrati!</a></div>
+
+<div class="card_circle3 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="card-container-carousel col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Super Welcome Bonus Live Betting</h2>
+
+<p class="text-promo">Coming Soon!</p>
+<!--
+<div class="info-promo-container transition"><a class="info-promo" href="#">Anmelden</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati">Jetz Wetten!</a></div> -->
+
+<div class="card_circle4 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="card-container-carousel col-sm-12 ">
+<div class="card transition ">
+<h2 class="transition h2-promo">Super Welcome Bonus Live Casino</h2>
+
+<p class="text-promo">Coming Soon!</p>
+<!--
+<div class="info-promo-container transition"><a class="info-promo" href="#">Anmelden</a></div>
+
+<div class="cta-container transition"><a class="cta" href="https://www.betlive5000.com/user/registrati">Jetz Wetten!</a></div> -->
+
+<div class="card_circle5 transition">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Left and right controls --><a class="left hide carousel-control" data-slide="prev" href="#myCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="right hide carousel-control" data-slide="next" href="#myCarousel" role="button"> <span class="sr-only">Next</span> </a></div>
+</div>
+</div>
